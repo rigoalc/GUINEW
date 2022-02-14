@@ -27,6 +27,8 @@ is substracting the birth year from the current year and then subtract one more 
 if the current month/day comes before the user's birth month/day.
 """
 class Age:
+    
+    
     def __init__(self):
         menu_def = [#menu
             ['&File', ['&Quit']],
@@ -63,6 +65,12 @@ class Age:
                 result = age#actual age
                 self.window['result'].update(result)
                 self.window['status'].update("Done!")
+                
+                
+    def add(x, y): #Function for test
+        return x + y
+    
+        
 
 if __name__ == '__main__': 
 

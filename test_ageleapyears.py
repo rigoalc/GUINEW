@@ -4,7 +4,7 @@
 
 '''
 On the terminal:
-
+To run the program.
 python3 -m venv venv
 . venv/bin/activate
 pip install Flask
@@ -16,7 +16,7 @@ pytest
  
 '''
 
-from ageleapyears import age_leap_years
+from ageleapyears import add #Importing the module from the main file
 
-def test_age_leap_years():
-    assert age_leap_years("01","01","2020") == 2
+def test_add():
+    assert add(7, 1) == 8
