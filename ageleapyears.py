@@ -78,13 +78,14 @@ class Age:
                 self.window['result'].update(result)
                 self.window['status'].update("Done!")
                 
-                
-    def add(x, y): #Function for test
-        return x + y
-    
         
 
 if __name__ == '__main__': 
 
     gui = Age()
     gui.run()
+    
+
+def add(x, y): #Function for test
+        return x + y
+    

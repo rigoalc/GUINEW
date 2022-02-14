@@ -12,7 +12,9 @@ pytest
  
 '''
 
-from ageleapyears import add #Importing the module from the main file
+from ageleapyears import Age
+from  ageleapyears import add
+#Importing the module from the main file
 
 def test_add():
     assert add(7, 1) == 8
