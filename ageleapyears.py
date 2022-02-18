@@ -49,7 +49,7 @@ class Age:
         pad = (5, 1)
         layout = [#Window
             [sg.Menu(menu_def)],
-            [sg.Text("Enter your birthay mm/dd/yyyy to calculate your age:")],
+            [sg.Text("Enter your birthday mm/dd/yyyy to calculate your age:")],
             [sg.Input(size=(10,1), key='birthmonth', pad=pad), sg.Input(size=(10,1), key='birthday', pad=pad), sg.Input(size=(10,1), key='birthyear', pad=pad)],#This input format format to .date
             [sg.Text('Result:'), sg.Text(key='result')],
             [sg.Button('Calc'), sg.Button('Quit')],
@@ -71,7 +71,7 @@ class Age:
                 sg.popup("About Dialog", ABOUT)#Pop the ABOUT message
             elif event == 'Calc':#User push 'calc' button
                 today = date.today()
-                one_or_zero = ((today.month, today.day) < (int(values['birthmonth']),int(values['birthday'])))#compare and have a one or cero value if the user birthay has passed the current year
+                one_or_zero = ((today.month, today.day) < (int(values['birthmonth']),int(values['birthday'])))#compare and have a one or cero value if the user birthday has passed the current year
                 pre_age = today.year - int(values['birthyear'])#calculate the years old 
                 age = pre_age - one_or_zero#Discount or not one year 
                 result = age#actual age
