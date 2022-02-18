@@ -7,9 +7,10 @@ On the terminal:
 To run the program.
 python3 -m venv venv
 . venv/bin/activate
+pip install tk 'or' python3-tk
+pip install pysimplegui
 pip install pytest
 pytest
- 
 '''
 
 
